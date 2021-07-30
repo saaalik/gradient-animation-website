@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan">
+	<link rel="stylesheet" href="mystyle.css">
+	<title>gradient</title>
+</head>
+<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+</script>
+<body>
+  <div class="eleven">
+	<h1>gradience</h1>
+  </div>
+  <div class="bottom">
+	<h1>text</h1>
+  </div>
+  <div class="container">
+	<div class="btn-holder">
+	  <button  onclick="topFunction()" id="myBtn" title="Go to top" type="button">^</button>
+	</div>
+  </div>
+</body>
+</html>
